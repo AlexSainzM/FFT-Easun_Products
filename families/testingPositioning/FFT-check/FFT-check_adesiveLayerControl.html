@@ -73,31 +73,43 @@
       <h1 class="display-4 fw-normal">Pricing</h1>
       <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
     </div> -->
+
   </header>
 
   <main>
 
-    <div class="container  px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="container  px-4 py-3">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
         
         <div class="col-12 col-sm-12 col-lg-6">
-          <img src="./img/FFTCarGrip1.jpg" class="d-block mx-lg-auto img-fluid imgRedondeada" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <img src="./img/FFTcheckALC1.jpg" class="d-block mx-lg-auto img-fluid imgRedondeada" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
 
         <div class="col-12 col-sm-12 col-lg-6">
           <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1> -->
           <div class="container">
-            <img class="img-fluid" src="./img/FFTCarGripLogo1.jpg" alt="">
+            <img class="img-fluid" src="./img/FFTcheckALCLogo.jpg" alt="">
           </div>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <p class="lead">El Adhesive Layer Control (ALC) de FFT es un sistema avanzado que asegura la aplicación precisa de adhesivos mediante detección óptica en 3D. Monitorea en tiempo real para corregir cualquier anomalía, mejorando la calidad y la resistencia estructural del producto. Ideal para procesos que exigen alta precisión.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> -->
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Conocer mas detalles</button>
+            
           </div>
         </div>
 
       </div>
     </div>
+
+    <hr class="featurette-divider">
+
+    
+
+    <hr class="featurette-divider">
+
+    
+    
+
 
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
@@ -207,6 +219,26 @@
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>This content should appear at the bottom after you scroll.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
   </main>
