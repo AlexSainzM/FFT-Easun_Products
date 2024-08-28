@@ -1,0 +1,20 @@
+body {
+  background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+}
+
+/* .container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+} */
+
+@media (min-width: 25px) {
+  .imgRedondeada { border-radius: 3rem; }
+}
+
+.prueba{
+  display: flex;
+  justify-content: center;
+}
