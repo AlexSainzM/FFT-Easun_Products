@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Alejandro Sainz Morales and Bootstrap contributors">
+    <meta name="generator" content="Alejandro 0.84.0">
+    <title>FFT hemtec - FFT hemtec 180°</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../../../assets/dist/css/bootstrap.min.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./styles.css" rel="stylesheet">
+
+
+  </head>
+  
+  <body>
+
+    <!-- START LATERAL EXPLORER -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"> Joining, hemming, separating</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p> <-- Ver todas las familias de productos. (o cualquier otro texto)</p>
+
+        <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#item-1">FFT-hemtec</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="./FFT-hemtec_180.html#FFT-hemtec-180">FFT-hemtec 180°</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT-hemtec Roller Cleaner</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT-hemtec Single</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT-hemtec Twinstep</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT-hemtec Verso</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT-hemtec Verso A2</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT-hemtec Verso M</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT-hemtec Verso MP</a>
+              </nav>
+            <a class="nav-link" href="#item-2">FFT-lasertec</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT Laser beam calibration</a>
+                <a class="nav-link ms-3 my-1" href="#item-1-1">FFT Protection Cabin </a>
+              </nav>
+            <a class="nav-link" href="#item-3">FFT-weldtec</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#item-3-1">FFT Welding Guns</a>
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#item-1-1">FFT C Gun</a>
+                    <a class="nav-link ms-3 my-1" href="#item-1-1">FFT X Gun</a>
+                  </nav>
+                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+              </nav>
+          </nav>
+        </nav>
+
+      </div>
+    </div>
+    <!-- END LATERAL EXPLORER -->
+
+    <!-- START SCROLL COINTAINER -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+    
+      <!-- START MAIN CONTAINER -->
+      <div class="container py-3" id="FFT-hemtec-180">
+
+        <header>
+
+          <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+              <img src="../../../assets/img/LogoFFT.gif" alt="FFT-MX-LOGO"  height="40" class="me-2">
+              <span class="fs-4">FFT México</span>
+            </a>
+
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+              <a class="me-3 py-2 text-dark text-decoration-none" href="#">Inicio</a>
+              <a class="me-3 py-2 text-dark text-decoration-none" href="#">Acerca de nosotros</a>
+              <a class="me-3 py-2 text-dark text-decoration-none" href="#">Nuestra familia de productos</a>
+              <a class="me-3 py-2 text-dark text-decoration-none" href="#">Servicios</a>
+              <a class="py-2 text-dark text-decoration-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Navegar entre productos</a>
+              <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+            </nav>
+
+          </div>
+
+
+          <!--Este div también es util para colocar titulos que formen parte del header-->
+
+          <!-- <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Pricing</h1>
+            <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+          </div> -->
+
+        </header>
+
+        <main>
+
+          <div class="container  px-4 py-3">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-3">
+              
+              <div class="col-12 col-sm-12 col-lg-6">
+                <img src="./img/FFT-hemtec-180.jpg" class="d-block mx-lg-auto img-fluid imgRedondeada" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+
+              <div class="col-12 col-sm-12 col-lg-6">
+                <!-- <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1> -->
+                <div class="container">
+                  <img class="img-fluid" src="./img/FFt-hemtec-180Logo.jpg" alt="">
+                </div>
+                <p class="lead">La tecnología Hemtec de FFT redefine el proceso de hembrado de precisión en la industria automotriz. Utilizando sistemas modulares y herramientas robóticas avanzadas, Hemtec permite un doblado de bordes eficiente y preciso en piezas de acero y aluminio. Su flexibilidad y capacidad para adaptarse a diferentes ángulos, hasta 180°, la convierten en una solución ideal para componentes como techos solares y puertas. Con opciones de control de calidad en tiempo real, Hemtec garantiza acabados perfectos en cada proceso.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button> -->
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">Conocer mas detalles</button>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <div class="container">
+                  <div class="carousel-caption text-start">
+                    <h1>Example headline.</h1>
+                    <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Some representative placeholder content for the second slide of the carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <div class="container">
+                  <div class="carousel-caption text-end">
+                    <h1>One more for good measure.</h1>
+                    <p>Some representative placeholder content for the third slide of this carousel.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Single <span class="text-muted">Un solo sensor.</span></h2>
+              <p class="lead">El componente se desplaza con respecto al laser.</p>
+              <ul >
+                <li class="lead">El sensor puede instalarse fijo en un robot o en una unidad giratoria</li>
+                <li class="lead">El componente se mueve con respecto al laser</li>
+                <li class="lead">El robot desplaza el sensor sobre el componente</li>
+                <li class="lead">El resultado de la medición se almacena con la posición de la medición</li>
+                <li class="lead">Conclusión clara sobre los lugares de NiO</li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Quad <span style="color: #009d80;">Cuatro sensores</span></h2>
+              <p class="lead">El cordón adhesivo se detecta siempre, incluso durante las secuencias de movimientos dinámicos.</p>
+              <ul >
+                <li class="lead">Se colocan cuatro sensores alrededor de la boquilla del adhesivo</li>
+                <li class="lead">Los sensores forman un rectangulo al rededor de la salida del adhesivo</li>
+                <li class="lead">El resultado de la medición se almacena con la posición de la medición</li>
+                <li class="lead">Conclusión clara sobre los lugares de NiO</li>
+              </ul>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <video style="border-radius: 15%;" src="./videos/FFT-check_ALCQuad1.mp4" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" type="video/mp4" autoplay muted loop></video>
+
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <hr class="featurette-divider">
+
+          
+          
+
+
+          <!-- <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-white bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <h2 class="display-6 text-center mb-4">Caracteristicas técnicas</h2>
+
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th style="width: 34%;"></th>
+                  <th style="width: 22%;"></th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Tipo de medición: </th>
+                  <td></td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Frecuencia de medición: </th>
+                  <td></td>
+                  
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Resolución del sensor: </th>
+                  <td></td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Precisión altura del adhesivo: </th>
+                  <td></td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Clase de protección: </th>
+                  <td></td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Temperaturas soportadas: </th>
+                  <td></td>
+                  
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+
+          <div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenteredScrollableTitle">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                  <p>This content should appear at the bottom after you scroll.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          <div class="row">
+            <div class="col-12 col-md">
+              <img class="mb-2" src="../assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+              <small class="d-block mb-3 text-muted">&copy; 2017–2021</small>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Features</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>Resources</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5>About</h5>
+              <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        
+      </div>
+      <!-- END MAIN CONTAINER -->
+
+    </div>
+    <!-- END MAIN SCROLL CONTAINER -->
+
+
+    
+    <script src="../../../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
