@@ -1,0 +1,43 @@
+/* Tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+  }
+  
+  p, li {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .modal-title, .btn {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* Colores principales */
+  body {
+    background-color: #F0F0F0; /* Gris claro para fondo */
+  }
+  
+  h1, h2, h3, h4 {
+    color: #009D80; /* Verde FFT */
+  }
+  
+  .navbar, footer {
+    background-color: #575756; /* Gris FFT */
+    color: white;
+  }
+  
+  /* Botones */
+  .btn-primary {
+    background-color: #009D80;
+    border-color: #009D80;
+  }
+  
+  .btn-secondary {
+    background-color: #575756;
+    border-color: #575756;
+  }
+  
