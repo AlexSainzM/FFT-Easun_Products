@@ -10,6 +10,7 @@ body {
   
   p, li {
     font-family: 'Arial', sans-serif;
+    opacity: 80%;
   }
   
   .modal-title, .btn {
@@ -18,7 +19,7 @@ body {
   
   /* Colores principales */
   body {
-    background-color: #F0F0F0; /* Gris claro para fondo */
+    background-color: #ffffff; /* Gris claro para fondo */
   }
   
   h1, h2, h3, h4 {
@@ -41,3 +42,7 @@ body {
     border-color: #575756;
   }
   
+
+  @media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+  }
