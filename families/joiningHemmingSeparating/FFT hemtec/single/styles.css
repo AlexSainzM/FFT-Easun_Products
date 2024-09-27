@@ -43,6 +43,11 @@ body {
   }
   
   .btn-secondary {
+    background-color: #D0D0D0;
+    border-color: #D0D0D0;
+  }
+
+  .btn-secondary:hover {
     background-color: #575756;
     border-color: #575756;
   }
