@@ -36,6 +36,11 @@ body {
     background-color: #009D80;
     border-color: #009D80;
   }
+
+  .btn-primary:hover {
+    background-color: #006b57;
+    border-color: #006b57;
+  }
   
   .btn-secondary {
     background-color: #575756;
@@ -51,8 +56,15 @@ body {
 
 
   /* Para pantallas grandes */
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
   .custom-img {
     max-height: 80vh; /* Aplica max-height solo en pantallas grandes */
+    }
+  } 
+
+  /* Ajuste del logo en pantallas xxl */
+  @media (min-width:1650px) {
+    .linelogo-img{
+      min-width: 55vh;
+    }
   }
-}
