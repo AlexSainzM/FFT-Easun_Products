@@ -51,6 +51,12 @@ body {
     background-color: #575756;
     border-color: #575756;
   }
+
+  /* Estilo para el enlace activo en el navbar */
+  .navbar-nav .nav-link.active {
+    font-weight: bolder;
+    color: #009D80 !important; /* Verde FFT */
+  }
   
 
   @media (min-width: 992px) {
@@ -63,7 +69,7 @@ body {
   /* Para pantallas grandes */
   @media (min-width: 768px) {
   .custom-img {
-    max-height: 80vh; /* Aplica max-height solo en pantallas grandes */
+    max-height: 80vh; /* Aplica max-height solo en pantallas grandes - Main Banner picture*/
     }
   } 
 
