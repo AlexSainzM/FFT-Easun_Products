@@ -83,3 +83,9 @@ body {
   .featurette-divider {
     margin: 2rem 0; /* Space out the Bootstrap <hr> more */
   }
+
+  .featurette-title {
+    margin-top: 1rem;
+    opacity: 90%;
+    font-size: xx-large;
+  }
