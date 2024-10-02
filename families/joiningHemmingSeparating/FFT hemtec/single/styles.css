@@ -25,6 +25,10 @@ body {
   h1, h2, h3, h4 {
     color: #009D80; /* Verde FFT */
   }
+
+  .text-justify {
+    text-align: justify;
+  }
   
   .navbar, footer {
     background-color: #575756; /* Gris FFT */
@@ -56,6 +60,11 @@ body {
   .navbar-nav .nav-link.active {
     font-weight: bolder;
     color: #009D80 !important; /* Verde FFT */
+  }
+
+  .a-breadcrumb-item {
+    font-size: small;
+    color: #009D80;
   }
   
 
